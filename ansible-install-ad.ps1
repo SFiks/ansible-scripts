@@ -12,7 +12,7 @@ New-LocalUser @newUserParams
 
 # User in Gruppe 'Administrators' aufnehmen
 
-net localgroup Administrators automation /add
+net localgroup Administratoren automation /add
 
 
 # Download Ansible WinRM Skript
