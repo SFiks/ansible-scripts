@@ -23,7 +23,7 @@ $file = "C:\ConfigureRemotingForAnsible.ps1"
 
 
 #Ansible WinRM Skript ausführen
-C:\ConfigureRemotingForAnsible.ps1 -DisableBasicAuth -ForceNewSSLCert -Verbose
+C:\ConfigureRemotingForAnsible.ps1 -ForceNewSSLCert -Verbose
 
 
 #WinRM Konfiguration anzeigen
