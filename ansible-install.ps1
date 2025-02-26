@@ -5,7 +5,7 @@ New-LocalUser -Name "automation" -Password $password -FullName "Automation Ansib
 
 # User in Gruppe 'Administrators' aufnehmen
 
-Get-LocalUser -Name $userAccountName | Add-LocalGroupMember -Group 'Administratoren'
+Get-LocalUser -Name 'automation' | Add-LocalGroupMember -Group 'Administratoren'
 
 
 # Download Ansible WinRM Skript
