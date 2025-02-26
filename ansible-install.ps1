@@ -1,14 +1,7 @@
 ﻿# User anlegen
+$password = Read-Host 'Enter password: ' -AsSecureString
+New-LocalUser -Name "automation" -Password $password -FullName "Automation Ansible User" -Description "Ansible user"
 
-$userAccountName = 'automation'
-$userAccountPassword = Read-Host 'Enter password: ' -AsSecureString
-$newUserParams = @{
-    Name = $userAccountName
-    AccountNeverExpires = $true
-    PasswordNeverExpires = $true
-    Password = $userAccountPassword
-    }
-New-LocalUser @newUserParams
 
 # User in Gruppe 'Administrators' aufnehmen
 
